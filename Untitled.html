@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> random </title>
+<script>
+//alert("Jsvscript is funny");
+var familynames = ["shankar", "veena", "jyothsna"];
+var counter = 0;
+function printMyFamilyNames()
+{
+    document.getElementById("familytree").innerHTML = familynames[counter];
+    if (counter == 2)
+    {
+        counter = 0;
+    }else{
+        counter++;
+    }
+}
+</script>
+    </head>
+    <body>
+<h1>This is my first javascript program</h1>
+<body>
+<p id="familytree">None</p>
+<button onclick="printMyFamilyNames()">Oh mera family</button>
+</body>
+    </body>
+</html>
